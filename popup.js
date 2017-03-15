@@ -8,12 +8,18 @@
 //   });
  
 // });
+
+chrome.browserAction.onClicked.addListener(function(tab) {
+    chrome.tabs.executeScript(null, {
+    code: "document.getElementById('mega-uh-wrapper').style.display = 'none'"
+  });
+});
   
 
 
 //  document.addEventListener('DOMContentLoaded', function () {
 //   document.getElementById('christian-kyle').addEventListener('click', function() {
-//     document.getElementById('mega-uh-wrapper').style.display = "none";
+    // document.getElementById('mega-uh-wrapper').style.display = "none";
 //   });
 // });
 
@@ -24,9 +30,9 @@
 $(document).ready(function() {
 
   //=========Yahoo==================
-  $('#mega-uh-wrapper').detach();
-  $('#mega-uh').detach();
-  $('#banner').detach();
+  // $('#mega-uh-wrapper').detach();
+  // $('#mega-uh').detach();
+  // $('#banner').detach();
 
 
   //===========Youtube===============
